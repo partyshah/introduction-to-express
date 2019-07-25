@@ -1,0 +1,17 @@
+title: Introduction to Express
+tagline: A brand new course on Learning Lab
+description: Learn Express
+template:
+  repo: introduction-to-express-template
+  name: introduction-to-express
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
